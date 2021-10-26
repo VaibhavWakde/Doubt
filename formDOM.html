@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {}
+    </style>
+
+</head>
+
+<body>
+
+    <!-- element under element by dom -->
+    <button onclick="displayData()">Do You Want to Calculate Percentage?</button>
+
+
+    <script>
+        function displayData() {
+            let body = document.body;
+            let anchor = document.createElement("a");
+            let title = document.createElement("h1");
+            let submitbutton = document.createElement("button");
+            let div = document.createElement("div");
+
+            let divc = document.createElement("div");
+            let div1st = document.createElement("div");
+            let div2nd = document.createElement("div");
+
+            let div1 = document.createElement("div")
+            let div2 = document.createElement("div")
+            let div3 = document.createElement("div")
+            let div4 = document.createElement("div")
+            let div5 = document.createElement("div")
+            let div6 = document.createElement("div")
+
+
+            let linebreake1 = document.createElement("br");
+            let linebreake2 = document.createElement("br");
+            let linebreake3 = document.createElement("br");
+            let linebreake4 = document.createElement("br");
+            let linebreake5 = document.createElement("br");
+            let linebreake6 = document.createElement("br");
+
+
+            let eng_label = document.createElement("h3");
+            let eng_input = document.createElement("input");
+
+            let inputElements = document.getElementsByTagName("input");
+
+
+
+            let hin_label = document.createElement("h3");
+            let hin_input = document.createElement("input");
+
+            let mar_label = document.createElement("h3");
+            let mar_input = document.createElement("input");
+
+            let sci_label = document.createElement("h3");
+            let sci_input = document.createElement("input");
+
+            let math_label = document.createElement("h3");
+            let math_input = document.createElement("input");
+
+            let soc_label = document.createElement("h3");
+            let soc_input = document.createElement("input");
+
+
+            title.append("Percentage Calculator");
+
+
+            eng_label.append("English Marks: ");
+            hin_label.append("Hindi Marks: ");
+            mar_label.append("Marathi Marks: ");
+            sci_label.append("Science Marks: ");
+            math_label.append("Mathematics Marks: ");
+            soc_label.append("Social Science Marks: ");
+
+            submitbutton.append("Calculate");
+
+            // anchor.append("goto google")
+            // anchor.setAttribute("href","https://www.google.co.in")
+            // body.appendChild(anchor);
+
+
+
+
+            div1.appendChild(eng_label);
+            div1.appendChild(eng_input);
+            div1.appendChild(linebreake1);
+
+            div2.appendChild(hin_label);
+            div2.appendChild(hin_input);
+            div2.appendChild(linebreake2);
+
+
+            div3.appendChild(mar_label);
+            div3.appendChild(mar_input);
+            div3.appendChild(linebreake3);
+
+
+            div4.appendChild(sci_label);
+            div4.appendChild(sci_input);
+            div4.appendChild(linebreake4);
+
+
+            div5.appendChild(math_label);
+            div5.appendChild(math_input);
+            div5.appendChild(linebreake5);
+
+
+            div6.appendChild(soc_label);
+            div6.appendChild(soc_input);
+            div6.appendChild(linebreake6);
+
+
+            div1st.appendChild(div1);
+            div1st.appendChild(div2);
+            div1st.appendChild(div3);
+            div2nd.appendChild(div4);
+            div2nd.appendChild(div5);
+            div2nd.appendChild(div6);
+
+            divc.appendChild(div1st);
+            divc.appendChild(div2nd);
+
+            div.appendChild(title);
+            div.appendChild(divc);
+            div.appendChild(submitbutton);
+
+            body.appendChild(div);
+
+            // Styling part
+            div.setAttribute("style", "border:2px solid black; text-align:center;width:500px; height:400px; margin:0px; background-color: aquamarine;");
+            divc.setAttribute("style", "display:flex; text-align:center; margin-left:70px;");
+            div2nd.setAttribute("style", "margin-left:50px;");
+            title.setAttribute("style", "font-style: italic;");
+            submitbutton.setAttribute("style", "margin-top:15px;background-color:rgb(231, 12, 12); padding: 5px; color: white;");
+
+
+
+
+            // input element id
+
+            eng_input.setAttribute("id", "english",);
+            hin_input.setAttribute("id", "hindi");
+            mar_input.setAttribute("id", "marathi");
+            sci_input.setAttribute("id", "science");
+            math_input.setAttribute("id", "math");
+            soc_input.setAttribute("id", "social");
+
+
+
+            eng_input.setAttribute("type", "text")
+
+            hin_input.setAttribute("type", "text")
+
+            mar_input.setAttribute("type", "text")
+
+            sci_input.setAttribute("type", "text")
+
+            math_input.setAttribute("type", "text")
+
+            soc_input.setAttribute("type", "text")
+
+
+
+            // function showing result:
+
+            let a = parseInt(document.getElementById("english").value);
+            let b = parseInt(document.getElementById("hindi").value);
+            let c = parseInt(document.getElementById("marathi").value);
+            let d = parseInt(document.getElementById("science").value);
+            let e = parseInt(document.getElementById("math").value);
+            let f = parseInt(document.getElementById("social").value);
+
+            let s = a + b + c + d + e + f
+
+            let t = 600
+
+            console.log(s)
+            function sum() {
+                console.log(s);
+            }
+
+
+
+
+            // btn functionality:
+
+            submitbutton.setAttribute("onclick", "sum()");
+            // button.setAttribute("ondblclick","result()");
+
+//7385393346
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>
